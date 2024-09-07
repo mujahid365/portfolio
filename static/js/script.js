@@ -16,22 +16,27 @@ let sections = document.querySelectorAll('section')
 let navlink  = document.querySelectorAll('header nav a')
 
 window.onscroll = () => {
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute ('id');
+  // Get all sections and nav links
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('header nav a');
 
-    if (top => offset && top < offset + height) {
-      navlink.forEach(links => { 
-        links.classList.remove('active');
-        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+  // Get the current scroll position
+  let scrollPosition = window.scrollY;
 
+  sections.forEach(section => {
+    // Get the section’s position and dimensions
+    let sectionTop = section.offsetTop - 150; // Offset for the section top
+    let sectionHeight = section.offsetHeight; // Height of the section
+    let sectionId = section.getAttribute('id'); // Section ID
 
-      });
+    // Check if the current scroll position is within the section’s range
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      // Remove 'active' class from all nav links
+      navLinks.forEach(link => link.classList.remove('active'));
 
-    };
-
+      // Add 'active' class to the corresponding nav link
+      document.querySelector(`header nav a[href="#${sectionId}"]`).classList.add('active');
+    }
   });
 
 /*========= sticky navbar  ======== */
@@ -88,7 +93,7 @@ function emailSend(){
     Body : "And this is the body"
 }).then(
   message => alert(message)
-); 
+);
 
 }
     
