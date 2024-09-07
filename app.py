@@ -39,7 +39,7 @@ def submit_form():
     return f"Form submitted with name: {fullname}"
 
 
-@app.route('/data', methods=['GET', 'POST'])
+@app.route('/data/', methods=['GET', 'POST'])
 def display_data():
     if request.method == 'POST':
         password = request.form.get('password')
