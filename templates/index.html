@@ -43,7 +43,7 @@
             <a href="#"><i class='bx bxl-twitter'></i></a>
             <a href="#"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="{{ url_for('static', filename='files/cv.pdf') }}" class="btn">Download CV</a>
     </div>
 
     <div class="home-img">
@@ -139,61 +139,61 @@
 <section class="project" id="project">
     <h2 class="heading">Latest <span>Project</span></h2>
     <div class="project-container">
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project1.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor aiores sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="https://en.wikipedia.org/wiki/24-hour_clock"><i class='bx bx-link-external'></i></a>
-            </div>
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project1.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Corporate Website</h4>
+            <p>A modern and professional design for a leading corporate brand.</p>
+            <a href="https://en.wikipedia.org/wiki/24-hour_clock"><i class='bx bx-link-external'></i></a>
         </div>
-
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project2.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolo Maiores sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project3.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolorMaiores sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project4.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor Maiores sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project5.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="project-box">
-            <img src="{{ url_for('static', filename='images/Project6.jpg') }}" alt="">
-            <div class="project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit sit iusto quasi asperiores corrupti doloremque!</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
     </div>
+
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project2.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Travel Blog</h4>
+            <p>Vivid imagery and captivating content for wanderlust enthusiasts.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project3.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Product Landing Page</h4>
+            <p>An engaging design to highlight key features of a product launch.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project4.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Educational Platform</h4>
+            <p>An interactive interface for online learning and course management.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project5.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Photography Gallery</h4>
+            <p>A visually stunning gallery to feature breathtaking photography.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <img src="{{ url_for('static', filename='images/Project6.jpg') }}" alt="">
+        <div class="project-layer">
+            <h4>Healthcare App</h4>
+            <p>An intuitive and user-friendly design for medical services access.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+</div>
+
 </section>
 
 <!--contact section-->
